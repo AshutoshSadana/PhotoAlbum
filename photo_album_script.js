@@ -1,3 +1,30 @@
+
+
+$(function () {
+	
+	let NewContent = `<div class="image-container">
+          <div class="inner-image-container">
+            <div class="on-image-controls">
+              <div class="delete-confirm">Confirm deleting!</div>
+              <span class="fa fa-arrows"></span>
+              <span class="fa fa-check" data-toggle="tooltip" data-placement="top" title="Pick as primary"></span>
+              <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Image info"></span>
+              <span class="fa fa-times" data-toggle="tooltip" data-placement="top" title="Delete image"></span>
+            </div>
+            <div class="center-container">
+              <img src="https://images.unsplash.com/photo-1453831362806-3d5577f014a4?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1016&q=80&cs=tinysrgb">
+            </div>
+          </div>
+        </div>`
+	let added = false;
+	let $content;
+	$(".addremove").on('click', function () {
+		 $content = $(NewContent).appendTo('.product-image-manager');
+		
+	});
+});
+
+
 $(document).ready(function() {
   
 	$('[data-toggle="tooltip"]').tooltip();
